@@ -4,7 +4,6 @@ plugins {
 
 group = 'com.github.hank9999'
 version = '1.1.1'
-sourceCompatibility = '8'
 
 repositories {
     mavenCentral()
@@ -22,7 +21,7 @@ dependencies {
     compileOnly "org.spigotmc:spigot-api:1.13.2-R0.1-SNAPSHOT"
 }
 
-def targetJavaVersion = 17
+def targetJavaVersion = 8
 java {
     def javaVersion = JavaVersion.toVersion(targetJavaVersion)
     sourceCompatibility = javaVersion
